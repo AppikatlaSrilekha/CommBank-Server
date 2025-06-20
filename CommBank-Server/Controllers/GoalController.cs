@@ -17,6 +17,7 @@ public class GoalController : ControllerBase
         _usersService = usersService;
     }
 
+
     [HttpGet]
     public async Task<List<Goal>> Get() =>
         await _goalsService.GetAsync();
